@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="painel_principal" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #00CCFF;" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bluejaygm.arraypizz.login.LoginController">
+   <children>
+      <VBox layoutX="202.0" layoutY="241.0" onKeyPressed="#clickEntrar" prefHeight="80.0" prefWidth="100.0" spacing="15.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="198.0">
+         <children>
+            <TextField fx:id="tf_Email" prefHeight="30.0" promptText="Email" />
+            <PasswordField fx:id="pf_Senha" prefHeight="30.0" promptText="Senha" />
+         </children>
+      </VBox>
+      <Button fx:id="bt_Entrar" layoutX="253.0" layoutY="373.0" mnemonicParsing="false" onAction="#actionEntrar" onKeyPressed="#clickEntrar" prefHeight="30.0" prefWidth="100.0" text="Entrar" />
+      <Hyperlink fx:id="hp_cadastro" layoutX="271.0" layoutY="438.0" onAction="#actionCadastrar" text="Cadastrar" />
+      <VBox alignment="TOP_RIGHT" layoutX="93.0" layoutY="238.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+         <children>
+            <Label text="Email:" />
+            <Label text="Senha:" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <ImageView fx:id="iv_logo" fitHeight="154.0" fitWidth="366.0" layoutX="119.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@loginativos/logo_arraypizz.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

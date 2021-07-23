@@ -1,0 +1,53 @@
+
+/*
+ *
+ * arquivo usado para o estilo da tela de listagem de clientes
+ * TODO: 20/06/2019
+ * @version 1.0.0
+ * @author MIKHAEL DE OLIVEIRA SILVA D'AMATO
+ *
+ *
+ */
+.list-view{
+
+    -fx-border-width: 2px;
+    -fx-border-color: #0022FF;
+}
+
+.button {
+    -fx-background-radius: 360;
+    -fx-background-color: #0022FF;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 20pt;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.edit{
+
+        -fx-background-image: url("ativos/edit.png");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+
+}
+
+.button:hover {
+    -fx-background-color: #0075FF;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #00AAFF;
+}
+
+.label{
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.txtArea{
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+
+}

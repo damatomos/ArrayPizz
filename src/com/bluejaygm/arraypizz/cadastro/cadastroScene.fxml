@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #00CCFF;" stylesheets="@cadastro.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bluejaygm.arraypizz.cadastro.CadastroController">
+   <children>
+
+      <ImageView fx:id="iv_background" fitHeight="473.0" fitWidth="579.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ativos/pizzas.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#12b3c4" height="367.0" layoutX="94.0" layoutY="56.0" opacity="0.9" stroke="TRANSPARENT" strokeType="INSIDE" width="417.0" />
+      <VBox alignment="TOP_CENTER" layoutX="202.0" layoutY="94.0" prefWidth="200.0" spacing="15.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="198.0">
+         <children>
+            <TextField fx:id="tf_Name" promptText="Nome" />
+            <TextField fx:id="tf_Email" promptText="Email" />
+            <TextField fx:id="tf_ConfirmEmail" promptText="Confirmar Email" />
+            <PasswordField fx:id="pf_Password" promptText="Senha" />
+            <PasswordField fx:id="pf_ConfirmPassword" promptText="Confirmar Senha" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="202.0" layoutY="377.0" prefHeight="30.0" prefWidth="200.0" spacing="50.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="198.0">
+         <children>
+            <Button fx:id="bt_Voltar" alignment="CENTER" mnemonicParsing="false" onAction="#actionVoltar" prefHeight="30.0" prefWidth="80.0" text="Voltar" />
+            <Button fx:id="bt_Cadastrar" alignment="CENTER" mnemonicParsing="false" onAction="#actionCadastrar" prefHeight="30.0" prefWidth="80.0" text="Cadastrar" />
+         </children>
+      </HBox>
+      <VBox alignment="TOP_RIGHT" layoutX="91.0" layoutY="94.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+         <children>
+            <Label text="Nome:" />
+            <Label text="Email:" />
+            <Label text="Conf.Emaiil:" />
+            <Label text="Senha:" />
+            <Label text="Conf.Senha:" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

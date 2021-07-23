@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<AnchorPane prefHeight="500.0" prefWidth="600.0" stylesheets="@listagemclientes.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bluejaygm.arraypizz.telaprincipal.ListagemClientesController">
+   <children>
+      <SplitPane fx:id="splitpane_Dados" dividerPositions="0.540133779264214" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="300.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tableview_Clientes" prefHeight="398.0" prefWidth="282.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tablecolumn_Nome" minWidth="100.0" prefWidth="40.0" text="Nome" />
+                      <TableColumn fx:id="tablecolumn_CPF" minWidth="100.0" prefWidth="40.0" text="CPF" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="275.0" prefHeight="498.0" prefWidth="275.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Circle fill="#0022ff" layoutX="135.0" layoutY="410.0" radius="80.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Button layoutX="85.0" layoutY="360.0" mnemonicParsing="false" onAction="#actionSair" prefHeight="100.0" prefWidth="100.0" text="Sair" />
+                  <Button layoutX="10.0" layoutY="298.0" mnemonicParsing="false" onAction="#actionNovo" prefHeight="60.0" prefWidth="60.0" text="+" />
+                  <Button layoutX="105.0" layoutY="258.0" mnemonicParsing="false" onAction="#actionEditar" prefHeight="60.0" prefWidth="60.0" styleClass="edit" />
+                  <Button layoutX="201.0" layoutY="298.0" mnemonicParsing="false" onAction="#actionDeletar" prefHeight="60.0" prefWidth="60.0" text="-" />
+                  <GridPane gridLinesVisible="true" layoutX="-2.0" minWidth="100.0" prefHeight="253.0" prefWidth="279.0" style="-fx-border-color: black;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="119.0" text="Código" />
+                        <Label alignment="CENTER" prefHeight="43.0" prefWidth="119.0" text="Nome" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="52.0" prefWidth="119.0" text="CPF" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="79.0" prefWidth="119.0" text="Telefone" GridPane.rowIndex="3" />
+                        <Label fx:id="lblCodigo" alignment="CENTER" prefHeight="41.0" prefWidth="118.0" GridPane.columnIndex="1" />
+                        <Label fx:id="lblNome" alignment="CENTER" prefHeight="46.0" prefWidth="118.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="lblCPF" alignment="CENTER" prefHeight="43.0" prefWidth="118.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="lblTelefone" alignment="CENTER" prefHeight="41.0" prefWidth="118.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="69.0" prefWidth="119.0" text="Endereço" GridPane.rowIndex="4" />
+                        <TextArea fx:id="ta_Endereco" editable="false" maxWidth="120.0" prefHeight="66.0" prefWidth="100.0" styleClass="txtArea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </GridPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
